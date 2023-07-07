@@ -126,26 +126,7 @@ You don't need to change the front-end at all; it's already set up to send the c
 
 ---
 
-<center>🟡 - Minimally complete workshop (75%) - 🟡</center>
-
----
-
-## Create a Confirmation Page
-
-Instead of just showing a "Order Confirmed!", render a more complete component that includes the order information. For example:
-
-> **Thanks for ordering, [name]!**
->
-> Your order of [product] will be sent to your home in [province], Canada. Thank you for participating!
-
-To accomplish this, you'll need modify the `ConfirmationMsg` component.
-
----
-
 <center>🟢 - Complete workshop (100%) - 🟢</center>
 
 ---
 
-## Stretch Goals
-
-It would be nice if the stock would update when a customer successfully checks out of the store 😉.
