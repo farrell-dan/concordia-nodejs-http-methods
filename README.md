@@ -22,7 +22,13 @@ There are many ways to set up a full-stack development environment. For the Node
 
 This repository contains a frontend and a backend folder. This means that each folder is contains a complete environment (`package.json`, `/node_modules`) and are completely independent. You cannot reference code from one environment in the other environment.
 
-Generally speaking, the frontend will query the backend via calls to the server endpoints.
+Generally speaking, the frontend will query the backend via calls to the server endpoints. 
+
+## Task
+
+To be clear, **you don't need to edit any of the code in the `frontend`**. This work is done for you. Your primary task is to create the server endpoint to process the order. Once your server is complete, the form should work fine.
+
+---
 
 ### The Frontend
 
@@ -56,11 +62,7 @@ It is an order form for promotional products. Users need to fill out the complet
 
 For this exercise, you will need to create the endpoint that this form submits to. You will need to validate the data you receive and respond to the request appropriately.
 
-## Task
 
-To be clear, **you don't need to edit any of the code in the `frontend`**. This work is done for you. Your primary task is to create the server endpoint to process the order. Once your server is complete, the form should work fine.
-
----
 
 ## Validation
 
