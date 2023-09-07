@@ -2,15 +2,13 @@
 
 ## 🦊 Pre-lecture
 
-⏲️ _Estimated time required: 30 minutes._
-
-...nothing yet...
+There is no pre-lecture for this workshop.
 
 ---
 
 ## 🦉 Lecture
 
-- [lecture-1-data-validation.md](__lecture/lecture-1-data-validation.md)
+- [Lecture 1 | Data Validation](./lecture/lecture-1-data-validation.md)
 
 Keep in mind that these slides are not interactive, like in the actual lecture. Whenever possible, we will provide links to working code examples in Code Sandbox.
 
@@ -18,41 +16,29 @@ Keep in mind that these slides are not interactive, like in the actual lecture. 
 
 ## Setup
 
-There are many ways to set up a full-stack development environment. For the Node module, we will follow this set up provided in this repository.
+Today's workshop is a _**full stack**_ workshop. You'll need 2 active terminals to be able to run this workshop as intended.
 
-This repository contains a frontend and a backend folder. This means that each folder is contains a complete environment (`package.json`, `/node_modules`) and are completely independent. You cannot reference code from one environment in the other environment.
+### The Frontend (website):
 
-Generally speaking, the frontend will query the backend via calls to the server endpoints. 
+1. Open a terminal.
+2. Navigate to the `client` folder by typing `cd client`.
+3. Install the dependencies with `yarn install`.
+4. Boot React with `yarn start`.
 
-## Task
+### The Backend (server):
 
-To be clear, **you don't need to edit any of the code in the `frontend`**. This work is done for you. Your primary task is to create the server endpoint to process the order. Once your server is complete, the form should work fine.
+1. Open a **new** terminal (you can use a split terminal if you want).
+2. Navigate to the `server` folder by typing `cd server`.
+3. Install the dependencies with `yarn install`.
+4. Boot the server with `yarn start:server`.
 
----
-
-### The Frontend
-
-1. Open a terminal in VS Code
-2. Type `cd frontend`
-3. Type `yarn install`
-
-Use `yarn dev:frontend` to start the frontend dev environment.
-
-### The Backend
-
-1. Open _another_ terminal in VS Code
-2. Type `cd backend`
-3. Type `yarn install`
-
-Use `yarn dev:backend` to start the backend dev environment.
-
-![dual terminal](__lecture/assets/dual_terminal.gif)
+After following these steps, you should have 2 terminals. One should be running React, and the other should be running the server.
 
 ---
 
 ## ⚡ Exercises
 
-![order-form](./__lecture/assets/order-form.png)
+![order-form](./lecture/assets/order-form.png)
 
 ## The Order Form
 
@@ -62,7 +48,13 @@ It is an order form for promotional products. Users need to fill out the complet
 
 For this exercise, you will need to create the endpoint that this form submits to. You will need to validate the data you receive and respond to the request appropriately.
 
+## Task
 
+To be clear, **you don't need to edit any of the code in the `frontend`**. This work is done for you. Your primary task is to create the server endpoint to process the order. Once your server is complete, the form should work fine.
+
+Just so you know, the `body` that is sent by a `fetch` request is received in the `req.body` on the backend.
+
+---
 
 ## Validation
 
@@ -73,7 +65,7 @@ For this exercise, you will need to create the endpoint that this form submits t
    - whose address matches an address already in our database. Use only the street number and name for this.
 
 2. Validate that the data received is _valid_ as much as is possible.
-    - Is the email, an email? Does it include `@`? _(No need to go crazy here. Just a cursory evaluation.)_
+   - Is the email, an email? Does it include `@`? _(No need to go crazy here. Just a cursory evaluation.)_
 3. Validate that delivery address is within Canada. We only ship to Canada!
 4. Validate that the item selected is actually in stock.
 5. Validate that the item size was selected.
@@ -131,4 +123,3 @@ You don't need to change the front-end at all; it's already set up to send the c
 <center>🟢 - Complete workshop (100%) - 🟢</center>
 
 ---
-
