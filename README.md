@@ -21,16 +21,16 @@ Today's workshop is a _**full stack**_ workshop. You'll need 2 active terminals 
 ### The Frontend (website):
 
 1. Open a terminal.
-2. Navigate to the `client` folder by typing `cd client`.
+2. Navigate to the `frontend` folder by typing `cd frontend`.
 3. Install the dependencies with `yarn install`.
-4. Boot React with `yarn start`.
+4. Boot React with `yarn dev:frontend`.
 
 ### The Backend (server):
 
 1. Open a **new** terminal (you can use a split terminal if you want).
-2. Navigate to the `server` folder by typing `cd server`.
+2. Navigate to the `backend` folder by typing `cd backend`.
 3. Install the dependencies with `yarn install`.
-4. Boot the server with `yarn start:server`.
+4. Boot the server with `yarn dev:backend`.
 
 After following these steps, you should have 2 terminals. One should be running React, and the other should be running the server.
 
